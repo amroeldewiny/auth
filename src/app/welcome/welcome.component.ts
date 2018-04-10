@@ -8,9 +8,12 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
+  title: string = "";
+
   constructor(public router: Router) { }
 
   ngOnInit() {
+    this.title = "Auth app"
   }
 
   login() {

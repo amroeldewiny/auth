@@ -4,6 +4,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AlertModule } from 'ngx-bootstrap/alert';
+
 import { AuthService } from './servies/auth-service/auth.service';
 import { DataService } from './servies/data-service/data.service';
 import { AuthGuardService } from './servies/authGuard/auth-guard.service';
@@ -34,7 +36,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ReactiveFormsModule,
     FormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlertModule.forRoot()
   ],
   providers: [AuthService, DataService, AuthGuardService],
   bootstrap: [AppComponent]

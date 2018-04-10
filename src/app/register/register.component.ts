@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
     "password_confirmation": new FormControl('', Validators.required),
   });
   token: any = "";
+  error: boolean = false;
 
   constructor(public router: Router, public auth: AuthService) { }
 
@@ -27,9 +28,13 @@ export class RegisterComponent implements OnInit {
   register() {
     console.log(this.registerForm);
     if (this.registerForm.value.password != this.registerForm.value.password_confirmation) {
-      console.log('password confirmation did\'t match');
+      this.error = true;
+      setTimeout(() => {
+        this.error = false;
+      }, 4000)
     } else {
-      this.auth.registerUser(this.registerForm.value);
+      console.log('register work');
+      //this.auth.registerUser(this.registerForm.value);
     }
   }
 
