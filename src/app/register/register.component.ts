@@ -33,8 +33,8 @@ export class RegisterComponent implements OnInit {
         this.error = false;
       }, 4000)
     } else {
-      console.log('register work');
-      //this.auth.registerUser(this.registerForm.value);
+      //console.log('register work');
+      this.auth.registerUser(this.registerForm.value);
     }
   }
 
