@@ -19,12 +19,12 @@
               </a>
             </li>
           </ul>
-          <ul class="navbar-nav my-2 my-lg-0" *ngIf="user">
+          <ul class="nav navbar-nav navbar-right" *ngIf="user">
             <li class="nav-item">
               <p class="nav-link">Hoi {{user.name}}</p>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="logout()">Logout</a>
+              <a class="nav-link logout" (click)="logout()">Logout</a>
             </li>
           </ul>
         </div>

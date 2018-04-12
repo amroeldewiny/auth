@@ -7,3 +7,19 @@ body{
 .welcome, .login, .register, .dashboard{
     padding-top: 10%
 }
+
+.bg-light{
+    border-bottom: 1px solid #eee;
+    .navbar-right{
+        position: relative;
+        top: 10px;
+        .logout{ cursor: pointer; }
+    }
+    
+}
+
+.dashboard{
+    main{
+        h1{ padding-bottom: 5%; }
+    }
+}
