@@ -12,12 +12,19 @@ import { AuthService } from '../servies/auth-service/auth.service';
 export class DashboardComponent implements OnInit {
 
   user: any = "";
-
+  page: any = "";
   constructor(public router: Router, public auth: AuthService) { }
 
   ngOnInit() {
     if (localStorage.getItem('token')) {
       this.getAuth();
+    }
+
+    // page nav 
+    this.page = {
+      "title": "Conexio",
+      "page": "Dashboard",
+      "contact": "Contact"
     }
   }
 

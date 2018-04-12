@@ -19,6 +19,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './dashboard/home/home.component';
+import { ContactComponent } from './dashboard/contact/contact.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DashboardComponent,
     RegisterComponent,
     WelcomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
