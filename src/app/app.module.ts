@@ -1,8 +1,12 @@
+import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
+import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AlertModule } from 'ngx-bootstrap/alert';
 
@@ -37,7 +41,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [AuthService, DataService, AuthGuardService],
   bootstrap: [AppComponent]
