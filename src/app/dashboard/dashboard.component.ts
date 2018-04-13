@@ -38,6 +38,7 @@ export class DashboardComponent implements OnInit {
       .subscribe((res) => {
         console.log(res[1]);
         this.user = res[1];
+        localStorage.setItem('userID', this.user.id);
       }, (error) => {
         console.log(error);
       })

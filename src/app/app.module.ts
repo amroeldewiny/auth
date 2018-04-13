@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { ModalModule } from 'ngx-bootstrap';
 
 import { AuthService } from './servies/auth-service/auth.service';
 import { DataService } from './servies/data-service/data.service';
@@ -41,7 +42,8 @@ import { ContactComponent } from './dashboard/contact/contact.component';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [AuthService, DataService, AuthGuardService],
   bootstrap: [AppComponent]

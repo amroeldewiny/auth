@@ -20,6 +20,11 @@ body{
 
 .dashboard{
     main{
-        h1{ padding-bottom: 5%; }
+        h1{ padding-bottom: 6%; }
+        .create-customer{
+            position: relative;
+            top: -25px;
+            right: -30px;
+        }
     }
 }
